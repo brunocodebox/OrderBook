@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright Bruno Kieba - 2018
+-->
+<task1>
+  <bookplot>
+    
+    <file>orderbook.htm</file>
+    <summary>Order Books Summary</summary>
+    <bestspreads>10</bestspreads>
+    
+    <markers>     
+      <begin_summary>Begin Order Books Summary</begin_summary>
+      <end_summary>End Order Books Summary</end_summary>
+    </markers>
+  </bookplot>
+
+  <sessionfeed>
+    <sourcefeed>feed1</sourcefeed>
+    <maxBookLevels>5</maxBookLevels>
+    <feed1>
+      <csv>TSTJ.csv</csv>
+      <log>TSTJ.log</log>
+    </feed1>
+    <feed2>
+      <csv>HWKJ.csv</csv>
+      <log>HWKJ.log</log>
+      <diff>HWKJ_DIFF.log</diff>
+    </feed2>
+  </sessionfeed>
+</task1>

@@ -1,0 +1,2209 @@
+﻿<HTML>
+<HEAD>
+    <META NAME="GENERATOR" Content="Microsoft Visual Studio">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="OrderBook.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+    <TITLE>Order Book Summary</TITLE>
+</HEAD>
+<BODY>
+    <!-- Begin Order Books Summary -->
+	<div class='container-fluid'>
+	<h3 class='linebot'>Order Books Summary</h3>
+		<div class='row'>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Source feeds:</div>
+					<div class='col-2'>TSTJ.csv</div>
+				</div>
+				<div class='row'>
+					<div class='col-3'>Total feeds:</div>
+					<div class='col-2'>135</div>
+				</div>
+				<div class='row'>
+					<div class='col-3'>Bid price levels:</div>
+					<div class='col-2'>5</div>
+				</div>
+				<div class='row'>
+					<div class='col-3'>Ask price levels:</div>
+					<div class='col-2'>5</div>
+				</div>
+				<div class='row'>
+					<div class='col-3'>Total price levels:</div>
+					<div class='col-2'>10</div>
+				</div>
+				<h3 class ='linesep'>Top best spreads:</h3>
+				<h5>Best 1:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>1</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>884.5</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>989050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>885</div>
+					<div class='col'>1</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>77013</div>
+					<div class='col'>884</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>26013</div>
+					<div class='col'>750</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>15013</div>
+					<div class='col'>105</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+				<h5>Best 2:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>5</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>887.5</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>991050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>890</div>
+					<div class='col'>1</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>4500</div>
+					<div class='col'>885</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>75013</div>
+					<div class='col'>884</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>26013</div>
+					<div class='col'>750</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>15013</div>
+					<div class='col'>105</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+				<h5>Best 3:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>6</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>997</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>989050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1000</div>
+					<div class='col'>2013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>1</div>
+					<div class='col'>994</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2013</div>
+					<div class='col'>904</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>71013</div>
+					<div class='col'>903</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>25013</div>
+					<div class='col'>900</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+				<h5>Best 4:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>7</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>996.5</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>989050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1000</div>
+					<div class='col'>2013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>1</div>
+					<div class='col'>993</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2013</div>
+					<div class='col'>904</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>71013</div>
+					<div class='col'>903</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>25013</div>
+					<div class='col'>900</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+				<h5>Best 5:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>8</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>996</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>989050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1000</div>
+					<div class='col'>2013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>1</div>
+					<div class='col'>992</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2013</div>
+					<div class='col'>904</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>71013</div>
+					<div class='col'>903</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>25013</div>
+					<div class='col'>900</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+				<h5>Best 6:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>9</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>995.5</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>989050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1000</div>
+					<div class='col'>2013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>1</div>
+					<div class='col'>991</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2013</div>
+					<div class='col'>904</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>71013</div>
+					<div class='col'>903</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>25013</div>
+					<div class='col'>900</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+				<h5>Best 7:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>10</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>995</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>989050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1000</div>
+					<div class='col'>2013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>1</div>
+					<div class='col'>990</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2013</div>
+					<div class='col'>904</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>71013</div>
+					<div class='col'>903</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>25013</div>
+					<div class='col'>900</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+				<h5>Best 8:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>11</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>994.5</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>989050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1000</div>
+					<div class='col'>2013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>1</div>
+					<div class='col'>989</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2013</div>
+					<div class='col'>904</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>71013</div>
+					<div class='col'>903</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>25013</div>
+					<div class='col'>900</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+				<h5>Best 9:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>12</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>994</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>989050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1000</div>
+					<div class='col'>2013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>1</div>
+					<div class='col'>988</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2013</div>
+					<div class='col'>904</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>71013</div>
+					<div class='col'>903</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>25013</div>
+					<div class='col'>900</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+				<h5>Best 10:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>13</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>993.5</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>989050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1000</div>
+					<div class='col'>2013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>1</div>
+					<div class='col'>987</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2013</div>
+					<div class='col'>904</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>71013</div>
+					<div class='col'>903</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>25013</div>
+					<div class='col'>900</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+			</div>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Source feeds:</div>
+					<div class='col-2'>TSTJ.log</div>
+				</div>
+				<div class='row'>
+					<div class='col-3'>Total feeds:</div>
+					<div class='col-2'>205</div>
+				</div>
+				<div class='row'>
+					<div class='col-3'>Bid price levels:</div>
+					<div class='col-2'>5</div>
+				</div>
+				<div class='row'>
+					<div class='col-3'>Ask price levels:</div>
+					<div class='col-2'>5</div>
+				</div>
+				<div class='row'>
+					<div class='col-3'>Total price levels:</div>
+					<div class='col-2'>10</div>
+				</div>
+				<h3 class ='linesep'>Top best spreads:</h3>
+				<h5>Best 1:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>1</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>884.5</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>989050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>885</div>
+					<div class='col'>1</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>77013</div>
+					<div class='col'>884</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>26013</div>
+					<div class='col'>750</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>15013</div>
+					<div class='col'>105</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+				<h5>Best 2:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>5</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>887.5</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>991050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>890</div>
+					<div class='col'>1</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>4500</div>
+					<div class='col'>885</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>75013</div>
+					<div class='col'>884</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>26013</div>
+					<div class='col'>750</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>15013</div>
+					<div class='col'>105</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+				<h5>Best 3:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>6</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>997</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>989050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1000</div>
+					<div class='col'>2013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>1</div>
+					<div class='col'>994</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2013</div>
+					<div class='col'>904</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>71013</div>
+					<div class='col'>903</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>25013</div>
+					<div class='col'>900</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+				<h5>Best 4:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>7</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>996.5</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>989050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1000</div>
+					<div class='col'>2013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>1</div>
+					<div class='col'>993</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2013</div>
+					<div class='col'>904</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>71013</div>
+					<div class='col'>903</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>25013</div>
+					<div class='col'>900</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+				<h5>Best 5:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>8</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>996</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>989050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1000</div>
+					<div class='col'>2013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>1</div>
+					<div class='col'>992</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2013</div>
+					<div class='col'>904</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>71013</div>
+					<div class='col'>903</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>25013</div>
+					<div class='col'>900</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+				<h5>Best 6:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>9</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>995.5</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>989050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1000</div>
+					<div class='col'>2013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>1</div>
+					<div class='col'>991</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2013</div>
+					<div class='col'>904</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>71013</div>
+					<div class='col'>903</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>25013</div>
+					<div class='col'>900</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+				<h5>Best 7:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>10</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>995</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>989050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1000</div>
+					<div class='col'>2013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>1</div>
+					<div class='col'>990</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2013</div>
+					<div class='col'>904</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>71013</div>
+					<div class='col'>903</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>25013</div>
+					<div class='col'>900</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+				<h5>Best 8:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>11</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>994.5</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>989050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1000</div>
+					<div class='col'>2013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>1</div>
+					<div class='col'>989</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2013</div>
+					<div class='col'>904</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>71013</div>
+					<div class='col'>903</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>25013</div>
+					<div class='col'>900</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+				<h5>Best 9:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>12</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>994</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>989050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1000</div>
+					<div class='col'>2013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>1</div>
+					<div class='col'>988</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2013</div>
+					<div class='col'>904</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>71013</div>
+					<div class='col'>903</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>25013</div>
+					<div class='col'>900</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+				<h5>Best 10:</h5>
+				<div class='row bg-light'>
+					<div class='col-3'>Spread:</div>
+					<div class='col-2'>13</div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col-3'>Mid point:</div>
+					<div class='col-2'>993.5</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'>Inside market:</div>
+				</div>
+				<div class='row bg-light gapsep'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'>Price</div>
+					<div class='col linebot'>Ask Size</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1050</div>
+					<div class='col'>6013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1040</div>
+					<div class='col'>19919</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1025</div>
+					<div class='col'>989050</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'></div>
+					<div class='col'>1000</div>
+					<div class='col'>2013</div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col linebot'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>1</div>
+					<div class='col'>987</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2013</div>
+					<div class='col'>904</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>71013</div>
+					<div class='col'>903</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>25013</div>
+					<div class='col'>900</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col'>2400</div>
+					<div class='col'>850</div>
+					<div class='col'></div>
+					<div class='col'></div>
+				</div>
+				<div class='row bg-light'>
+					<div class='col'></div>
+					<div class='col linetop'>Bid Size</div>
+					<div class='col linetop'>Price</div>
+					<div class='col linetop'></div>
+					<div class='col'></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h3 class='gapsep'>Price-Quantity offers:</h3>
+				<h5 class='gapsep'>Bid price offers:</h5>
+	<div class='container-fluid'>
+		<h5 class='linebot'>Level 1</h5>
+		<div class='row'>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Bid differences:</div>
+					<div class='col-2'>0</div>
+				</div>
+			</div>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Bid differences:</div>
+					<div class='col-2'>0</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='container-fluid'>
+		<h5 class='linebot'>Level 2</h5>
+		<div class='row'>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Bid differences:</div>
+					<div class='col-2'>0</div>
+				</div>
+			</div>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Bid differences:</div>
+					<div class='col-2'>7</div>
+				</div>
+			<div class='row'>
+				<div class='col-3'></div>
+				<div class='col-2'>{885,2013}</div>
+			</div>
+			<div class='row'>
+				<div class='col-3'></div>
+				<div class='col-2'>{885,2500}</div>
+			</div>
+			<div class='row'>
+				<div class='col-3'></div>
+				<div class='col-2'>{892,6115}</div>
+			</div>
+			<div class='row'>
+				<div class='col-3'></div>
+				<div class='col-2'>{894,6115}</div>
+			</div>
+			<div class='row'>
+				<div class='col-3'></div>
+				<div class='col-2'>{896,6115}</div>
+			</div>
+			<div class='row'>
+				<div class='col-3'></div>
+				<div class='col-2'>{902,6115}</div>
+			</div>
+			<div class='row'>
+				<div class='col-3'></div>
+				<div class='col-2'>{904,8115}</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class='container-fluid'>
+		<h5 class='linebot'>Level 3</h5>
+		<div class='row'>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Bid differences:</div>
+					<div class='col-2'>0</div>
+				</div>
+			</div>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Bid differences:</div>
+					<div class='col-2'>5</div>
+				</div>
+			<div class='row'>
+				<div class='col-3'></div>
+				<div class='col-2'>{890,31115}</div>
+			</div>
+			<div class='row'>
+				<div class='col-3'></div>
+				<div class='col-2'>{891,25013}</div>
+			</div>
+			<div class='row'>
+				<div class='col-3'></div>
+				<div class='col-2'>{892,25013}</div>
+			</div>
+			<div class='row'>
+				<div class='col-3'></div>
+				<div class='col-2'>{903,8639}</div>
+			</div>
+			<div class='row'>
+				<div class='col-3'></div>
+				<div class='col-2'>{911,4095}</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class='container-fluid'>
+		<h5 class='linebot'>Level 4</h5>
+		<div class='row'>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Bid differences:</div>
+					<div class='col-2'>0</div>
+				</div>
+			</div>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Bid differences:</div>
+					<div class='col-2'>1</div>
+				</div>
+			<div class='row'>
+				<div class='col-3'></div>
+				<div class='col-2'>{910,4200}</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class='container-fluid'>
+		<h5 class='linebot'>Level 5</h5>
+		<div class='row'>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Bid differences:</div>
+					<div class='col-2'>0</div>
+				</div>
+			</div>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Bid differences:</div>
+					<div class='col-2'>0</div>
+				</div>
+			</div>
+		</div>
+	</div>
+				<h5 class='gapsep'>Ask price offers:</h5>
+	<div class='container-fluid'>
+		<h5 class='linebot'>Level 1</h5>
+		<div class='row'>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Ask differences:</div>
+					<div class='col-2'>0</div>
+				</div>
+			</div>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Ask differences:</div>
+					<div class='col-2'>1</div>
+				</div>
+			<div class='row'>
+				<div class='col-3'></div>
+				<div class='col-2'>{990,5923}</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class='container-fluid'>
+		<h5 class='linebot'>Level 2</h5>
+		<div class='row'>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Ask differences:</div>
+					<div class='col-2'>0</div>
+				</div>
+			</div>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Ask differences:</div>
+					<div class='col-2'>0</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='container-fluid'>
+		<h5 class='linebot'>Level 3</h5>
+		<div class='row'>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Ask differences:</div>
+					<div class='col-2'>0</div>
+				</div>
+			</div>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Ask differences:</div>
+					<div class='col-2'>1</div>
+				</div>
+			<div class='row'>
+				<div class='col-3'></div>
+				<div class='col-2'>{1050,1013}</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class='container-fluid'>
+		<h5 class='linebot'>Level 4</h5>
+		<div class='row'>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Ask differences:</div>
+					<div class='col-2'>0</div>
+				</div>
+			</div>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Ask differences:</div>
+					<div class='col-2'>0</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='container-fluid'>
+		<h5 class='linebot'>Level 5</h5>
+		<div class='row'>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Ask differences:</div>
+					<div class='col-2'>0</div>
+				</div>
+			</div>
+			<div class='col-sm-5'>
+				<div class='row'>
+					<div class='col-3'>Ask differences:</div>
+					<div class='col-2'>0</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- End Order Books Summary -->
+</BODY>
+</HTML>

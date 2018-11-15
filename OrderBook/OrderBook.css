@@ -1,0 +1,28 @@
+body {
+    padding: 40px;
+}
+
+h3 {
+    padding: 30px 20px 10px 0;
+}
+
+h5 {
+    padding: 20px 0 0px 0;
+}
+
+.linesep {
+    border-top: 1px dotted #000000;
+    min-height: 5px;
+}
+
+.linebot {
+    border-bottom: 1px dashed #aaa;
+}
+
+.linetop {
+    border-top: 1px dashed #aaa;
+}
+
+.gapsep {
+    padding-top: 20px;
+}
