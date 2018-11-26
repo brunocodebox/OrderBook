@@ -130,15 +130,27 @@ void OrderPlot::plotBookLevelsDiff(vecLevels& vCsvLevels, vecLevels& vLogLevels,
 			std::set_difference(keys2.begin(), keys2.end(), keys1.begin(), keys1.end(), std::inserter(diffKeys2, diffKeys2.begin()));
 
 			// Make pairs of different prices
-			for (auto& k : diffKeys1) {
+			for (auto& k1 : diffKeys1) {
 
-				vecPairInt vpi1, vpi2;
-				std::transform(m1[k].begin(), m1[k].end(), std::back_inserter(vpi1), [&k](const int& q) { return std::make_pair(k, q); });
-				std::transform(m2[k].begin(), m2[k].end(), std::back_inserter(vpi2), [&k](const int& q) { return std::make_pair(k, q); });
+				vecPairInt vpi;
 
-				// Append price,quantity pairs difference between csv and log feeds 
-				vpiCsv.insert(std::end(vpiCsv), std::begin(vpi1), std::end(vpi1));
-				vpiLog.insert(std::end(vpiLog), std::begin(vpi2), std::end(vpi2));
+				// Invert the price in the pair so we know it is a price difference rather than a quantity. It will be deinverted later.
+				std::transform(m1[k1].begin(), m1[k1].end(), std::back_inserter(vpi), [&k1](const int& q) { return std::make_pair(-1 * k1, q); });
+
+				// Append price,quantity pairs difference found in csv feeds
+				vpiCsv.insert(std::end(vpiCsv), std::begin(vpi), std::end(vpi));
+			}
+
+			// Make pairs of different prices
+			for (auto& k2 : diffKeys2) {
+
+				vecPairInt vpi;
+
+				// Invert the price in the pair so we know it is a price difference rather than a quantity. It will be deinverted later.
+				std::transform(m2[k2].begin(), m2[k2].end(), std::back_inserter(vpi), [&k2](const int& q) { return std::make_pair(-1 * k2, q); });
+
+				// Append price,quantity pairs difference found in log feeds 
+				vpiLog.insert(std::end(vpiLog), std::begin(vpi), std::end(vpi));
 			}
 
 			// Pick up the intersecting bid prices
@@ -224,7 +236,10 @@ void OrderPlot::plotLevelCol(const vecPairInt& vpi, InjectParams& ijParams, stri
 	for (auto& pi : vpi) {
 		ss << "\t\t\t<div class='row'>" << endl;
 		ss << "\t\t\t\t<div class='col-3'></div>" << endl;
-		ss << "\t\t\t\t<div class='col-2'>{" << pi.first << "," << pi.second << "}</div>" << endl;
+		if (pi.first < 0)
+			ss << "\t\t\t\t<div class='col-2'>{<span class='boldfield'>" << -1 * pi.first << "</span>," << pi.second << "}</div>" << endl;
+		else
+			ss << "\t\t\t\t<div class='col-2'>{" << pi.first << "," << "<span class='boldfield'>" << pi.second << "</span>}</div>" << endl;
 		ss << "\t\t\t</div>" << endl;
 	}
 
