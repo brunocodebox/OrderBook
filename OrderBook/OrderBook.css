@@ -26,3 +26,7 @@ h5 {
 .gapsep {
     padding-top: 20px;
 }
+
+.boldfield {
+    font-weight: bold;
+}

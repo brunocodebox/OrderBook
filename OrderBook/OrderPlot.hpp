@@ -34,8 +34,6 @@ private:
 	void	plotBookLevelsDiff(vecLevels& vCsvLevels, vecLevels& vLogLevels, InjectParams& ijParams, stringstream& ss);
 	void	plotLevels(vecLevels& vl, InjectParams& ijParams, stringstream& ss);
 	void	plotLevelCol(const vecPairInt& vpi, InjectParams& ijParams, stringstream& ss, bool bFluid=true);
-
-	void	calculateLeveldDiff();
 	void	injectHtml(const InjectParams& ijParams, const stringstream& ss);
 
 private:
